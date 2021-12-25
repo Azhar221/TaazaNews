@@ -1,24 +1,23 @@
-import React from 'react'
+// import React, { useState } from 'react'
+import SearchBar from './SearchBar';
+import { Link, Outlet } from "react-router-dom";
 
 export default function NavBar() {
+
     return (
         <>
             <div className="navbar">
-                <ul className="leftNav">
-                    <li><a href="/"><span>TazaNews</span></a></li>
-                    <li><a href="/">home</a></li>
-                    <li><a href="/">about</a></li>
-                    <li><a href="/">contact</a></li>
+                <ul>
+                    <li><Link to="/news"><span>TazaNews</span></Link></li>
                 </ul>
-                <div className="rightNav">
-                    <div className="searchBar">
-                        <textarea  name="search" id="search" cols="30" rows="10" placeholder="Search" />
-                        {/* <!-- <button id="searchBtn">search</button> --> */}
-                    </div>
+                <ul>
+                    <li><Link to="/about">about</Link></li>
+                    <li><Link to="/contact">contact</Link></li>
+                    <SearchBar />
 
-                </div>
+                </ul>
             </div>
-
+            <Outlet />
         </>
     )
 }

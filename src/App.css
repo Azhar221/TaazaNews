@@ -1,83 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  box-sizing: border-box !important;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   text-decoration: none !important;
   box-sizing: border-box !important;
+  background-color: #f0f0f0;
+  font-size: calc(0.3rem + 2vmin);
 }
 
 /******************** navBar start ************************/
 
 .navbar {
-  /* width: 100%; */
+  position: relative;
+  z-index: 99;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: sticky;
   text-decoration: none;
   list-style: none;
-  padding: 0.2rem 5rem;
-  background-color: #002933;
+  background-color: #f0f0f0;
+  padding: .8rem calc(6rem + 2vmin);
 }
-.leftNav {
+.navbar ul {
   display: flex;
-  list-style-type: none;
+  align-items: center;
 }
-.leftNav li a {
-  margin: 1rem;
-  font-size: calc(0.5rem + 2vmin);
+.navbar ul li a span {
+  color: #e16259;
+  font-weight: bold;
+}
+.navbar ul li a {
+  margin-left: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   font-weight: 99;
-  color: whitesmoke;
   text-decoration: none;
+  color: #000;
 }
-
-.leftNav li a:hover {
-  color: #61dafb;
+.navbar ul li a:hover {
+  border-bottom: 2px solid #e16259;
+  color: #e16259;
 }
-.leftNav li a span {
-  color: #7fc5d6;
-  font-weight: bold;
-  font-family: cursive, Arial, Helvetica, sans-serif;
-}
-.rightNav {
-  display: flex;
-}
-
 .searchBar {
-  width: calc(15rem);
-  margin: 1rem;
+display: flex;
+align-items: center;
+margin-left: 1rem;
 }
 
 .searchBar textarea {
   border: 1px solid rgba(10, 10, 10, 0.2);
-  max-width: 10rem;
-  min-width: 2rem;
+
+  width: calc(6rem + 2vmin);
   height: 1.5rem;
   padding: 0.3rem 0.5rem;
-  font-size: calc(0.3rem + 2vmin);
+  font-size: 1rem;
+  border-radius: 2rem;
   outline-style: none;
   resize: none;
-  border-radius: 2rem;
   overflow: hidden;
 }
 
 /******************** navBar end ************************/
 
-/* .App-header {
-  background-color: #2b56ac;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(1rem + 2vmin);
-  color: white;
-  height: 150vh;
-} */
-
 /******************** News section start ************************/
 
 .news {
-  margin: 2rem;
+  min-height: 100vh;
+  margin: 2rem calc(1rem + 2vmin);
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -88,9 +89,7 @@ body {
 
 .cards {
   position: relative;
-  /* min-width: 15rem;
-  max-width: 18rem; */
-  width: calc(20rem + 1.1vmin);
+  max-width: calc(15rem + 2vmin);
   margin: 1rem;
   background-color: rgb(245, 248, 253);
   box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
@@ -102,11 +101,11 @@ body {
 
 .cards #source {
   position: absolute;
-  font-size: 0.5rem;
-  padding: 0.5rem;
+  font-size: 0.2rem;
+  padding: 0.2rem;
   min-width: 4rem;
   text-align: center;
-  top: 9rem;
+  top: 7.2rem;
   background-color: rgb(14, 160, 218, 1);
   color: aliceblue;
   box-shadow: 0 5px 10px 2px rgba(22, 15, 15, 0.4);
@@ -121,24 +120,22 @@ body {
 .cards img {
   background-color: #282c34;
   width: 100%;
-  height: 10rem;
+  height: 8rem;
 }
 
 .cards h3 {
-  font-size: 1.2rem;
-  margin: 0.25rem 1rem 0 1rem;
+  font-size: 1rem;
+  margin: 0 1rem;
   height: 5rem;
   text-align: center;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   overflow: hidden;
   overflow-wrap: break-word;
 }
 
 .cards p {
-  font-size: 0.8rem;
-  /* padding: 0 0.5rem 3.5rem 0.5rem; */
+  font-size: 0.7rem;
   padding: 0 0.5rem;
   height: 3rem;
   text-align: center;
@@ -155,10 +152,10 @@ body {
 .cards .btn p {
   position: absolute;
   text-align: left;
-  top: 19.6rem;
+  top: 17rem;
   left: 1rem;
   padding: 0;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: lighter;
   color: #282c34;
 }
@@ -167,7 +164,7 @@ body {
   color: aliceblue;
   margin: 0.5rem 1rem 1rem 1rem;
   padding: 0.4rem 0.6rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   border: none;
   border-radius: 2rem;
   box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
@@ -179,3 +176,4 @@ body {
 }
 
 /******************** NewsItem Cards end ************************/
+

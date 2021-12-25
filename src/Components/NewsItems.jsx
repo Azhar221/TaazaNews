@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function NewsItems(props) {
     return (
-        <>
             <>
                 <div id="newsItem">
                     <div className="cards">
@@ -14,12 +13,12 @@ export default function NewsItems(props) {
                         <p>{props.description}</p>
                         <div className="btn">
                             <a href={props.url} target="_blank" rel="noreferrer"><button>Read More</button></a>
-                            <p>By {props.author}<br />{new Date(props.date).toGMTString()}</p>                        </div>
+                            <p>By {props.author}<br />{new Date(props.date).toGMTString()}</p>
+                        </div>
                     </div>
                 </div>
 
             </>
-        </>
     )
 }
 
