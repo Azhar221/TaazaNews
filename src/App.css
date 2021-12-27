@@ -12,7 +12,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   text-decoration: none !important;
   box-sizing: border-box !important;
   background-color: #f0f0f0;
@@ -110,6 +110,34 @@ margin-left: 1rem;
 }
 
 /******************** navBar end ************************/
+
+
+
+/******************** Loader start ************************/
+.load{
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  border: .5rem solid #f3f3f3; /* Light grey */
+  border-top: .5rem solid #e16259;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  animation: spin .6s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/******************** Loader end ************************/
+
+
 
 /******************** News section start ************************/
 
@@ -287,11 +315,12 @@ textarea {
 
 
 #footer {
-  margin-top: auto;
+  /* position: fixed; */
   width:100%;
   height: 10rem;
   background-color: #e16259;
   color: #fff;
+  argin-bottom: -3rem;
   padding: 2rem;
   text-align: center;
 }

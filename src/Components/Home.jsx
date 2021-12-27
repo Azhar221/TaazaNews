@@ -13,7 +13,7 @@ export default function Home() {
                 <Route path="/" element={<News key="allNews" category="general" />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/category/business" element={<News key="business" category="business" />} />
+                <Route path="/category/business" element={<News key="business" category="business"  />} />
                 <Route path="/category/entertainment" element={<News key="entertainment" category="entertainment" />} />
                 <Route path="/category/general" element={<News key="general" category="general" />} />
                 <Route path="/category/health" element={<News key="health" category="health" />} />
