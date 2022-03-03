@@ -80,7 +80,7 @@ News.defaultProps = {
     endPoint: "top-headlines",
     country: 'in',
     category: 'general',
-    apiKey: '0c705bf61a04443494f2dfc3cf1bca55',
+    // apiKey: '0c705bf61a04443494f2dfc3cf1bca55',
     pageSize: '10',
 }
 

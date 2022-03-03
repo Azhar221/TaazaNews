@@ -5,7 +5,7 @@ export default function Footer() {
         <>
             <div id="footer">
                 <footer>
-                    <p>Copyright 2022. All Rights Reserved by Azhar</p>
+                    <p>&copy; Copyright 2022. All Rights Reserved by Azhar</p>
                 </footer>
             </div>
         </>
