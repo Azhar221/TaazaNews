@@ -4,8 +4,8 @@ export default function SearchBar() {
     return (
         <>
             <div className="searchBar">
-                <textarea  name="search" id="search" cols="30" rows="10" placeholder="Search" />
-                {/* <!-- <button id="searchBtn">search</button> --> */}
+                <input type="text" name="search" id="search" placeholder="Search" />
+                <button id="searchBtn">Search</button>
             </div>
         </>
     )

@@ -1,22 +1,22 @@
-// import React, { useState } from 'react'
+import React from 'react'
 import SearchBar from './SearchBar';
 import { Link, Outlet } from "react-router-dom";
 
 export default function NavBar() {
-
     return (
         <>
-            <div className="navbar">
-                <ul>
-                    <li><Link to="/"><span>TazaNews</span></Link></li>
-                </ul>
-                <ul>
-                    <li><Link to="/about">about</Link></li>
-                    <li><Link to="/contact">contact</Link></li>
+            <nav className="navbar">
+                <div className="navbar-logo">
+                    <Link to="/"><span>TazaNews</span></Link>
+                </div>
+                <div className="navbar-right">
+                    <ul className="navbar-links">
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                    </ul>
                     <SearchBar />
-
-                </ul>
-            </div>
+                </div>
+            </nav>
             <Outlet />
         </>
     )
