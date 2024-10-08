@@ -5,14 +5,13 @@ import Home from './Components/Home';
 import Category from './Components/Category';
 function App() {
 
-  const apiKey = '0c705bf61a04443494f2dfc3cf1bca55'
   // const apiKey = process.env.REACT_APP_NEWS_API
 
   return (
     <>
       <NavBar />
       <Category />
-      <Home apiKey={apiKey}/>
+      <Home apiKey={process.env.API_KEY}/>
       <Footer />
     </>
   );
