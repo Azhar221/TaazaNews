@@ -18,7 +18,7 @@ export default function News(props) {
   const updateNews = async () => {
     // let url = `https://newsapi.org/v2/${props.endPoint}&apiKey=${props.apiKey}&page=1&pageSize=${props.pageSize}`;
     // let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
-    let url = `https://newsapi.org/v2/top-headlines?category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?category=${props.category}&apiKey=${props.apiKey}&page=${props.page}&pageSize=${props.pageSize}`;
 
     let data = await fetch(url);
     console.log(url);
@@ -33,7 +33,7 @@ export default function News(props) {
     setPage(page + 1);
     // updateNews();
 
-    let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?category=${props.category}&apiKey=${props.apiKey}&page=${props.page}&pageSize=${props.pageSize}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     setLoading(false.loading);
@@ -86,6 +86,7 @@ News.defaultProps = {
   country: "in",
   category: "general",
   // apiKey: '0c705bf61a04443494f2dfc3cf1bca55',
+  page: "0",
   pageSize: "10",
 };
 
