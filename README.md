@@ -16,7 +16,6 @@ Thank you for your interest in contributing to the **News Showcase** application
   - [4. Commit Your Changes](#4-commit-your-changes)
   - [5. Push to Your Forked Repository](#5-push-to-your-forked-repository)
   - [6. Create a Pull Request](#6-create-a-pull-request)
-- [Code of Conduct](#code-of-conduct)
 - [Questions?](#questions)
 
 ---
@@ -114,12 +113,6 @@ git push origin my-feature-branch
 - Fill out the necessary information in the Pull Request template, including a clear description of your changes and their significance.
 
 - Click **Create Pull Request**.
-
----
-
-## Code of Conduct
-
-We value a diverse community and expect all contributors to adhere to our [Code of Conduct](CODE_OF_CONDUCT.md). Please take a moment to read it to understand the expectations for participation in this project.
 
 ---
 
